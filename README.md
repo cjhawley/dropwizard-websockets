@@ -40,7 +40,7 @@ Or, if you prefer, you can register the endpoint before the running stage:
 
 ```java
 public void initialize(Bootstrap<Configuration> bootstrap) {
-    websocketBundle = new WebsocketBundle();        
+    WebsocketBundle websocketBundle = new WebsocketBundle(null, new ArrayList<>(), new ArrayList<>());        
     bootstrap.addBundle(websocketBundle);
 }
 
